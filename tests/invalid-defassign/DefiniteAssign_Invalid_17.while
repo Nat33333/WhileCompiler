@@ -1,0 +1,4 @@
+bool f() {
+    bool i;
+    return i;
+}

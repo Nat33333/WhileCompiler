@@ -1,0 +1,4 @@
+int f(int[] xs) {
+    int i;
+    return xs[i];
+}

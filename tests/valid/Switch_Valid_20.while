@@ -1,0 +1,14 @@
+string f(string x) {
+  switch(x) {
+    case "Red":
+      x="Blue";
+    case "Blue":
+      return x;
+ }
+  return "yellow";
+}
+
+void main() {
+    assert "Blue" == f("Red");
+
+}

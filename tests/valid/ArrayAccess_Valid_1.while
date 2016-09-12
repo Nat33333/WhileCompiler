@@ -1,0 +1,17 @@
+void main() {
+ 	{{{int z} y} x} a = {x:{y:{z:1}}};
+ 	{{{int z} y} x} b = a;
+ 	assert a == b;
+ 	b.x.y = {z:2};
+ 	assert a != b;
+ 	b.x.y.z = 1;
+ 	assert a == b;
+ 	
+ 	int[][][] p = [[[1, 2], [3, 4]], [[5, 6]], [[7]]];
+ 	int[][][] q = p;
+ 	assert q == p;
+ 	p[1][0][1] = 0;
+ 	assert q != p;
+ 	p[1][0][1] = 6;
+ 	assert p == q;
+}

@@ -1,0 +1,8 @@
+bool g(bool x) {
+    return (x || !x);
+}
+
+bool f() {
+    bool x;
+    return g(x);
+}
